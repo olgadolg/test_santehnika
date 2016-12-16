@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .collapse-content {
+            width: 100%;
+            height: 50px;
+            background-color: red;
+        }
+
+        .collapse-control {
+            margin: 1rem 0 0.5rem;
+            display: inline-block;
+        }
+
+        .simple-collapse2 .collapse-content {
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="simple-collapse">
+
+    <a href="#" class="collapse-control">Control</a>
+
+    <div class="collapse-content"></div>
+
+</div>
+
+<div class="simple-collapse2">
+
+    <a href="#" class="collapse-control">Control with animation</a>
+
+    <div class="collapse-content"></div>
+
+</div>
+
+</body>
+
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script type="application/javascript" src="js/script.js"></script>
+</html>

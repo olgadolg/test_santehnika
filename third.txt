@@ -1,0 +1,21 @@
+var theItem = null;
+var replaceItem = function () {
+    var priorItem = theItem;
+    var writeToLog = function () {
+        if (priorItem) {
+            console.log("hi");
+        }
+    };
+    theItem = {
+        longStr: new Array(1000000).join('*'),
+        someMethod: function () {
+            console.log(someMessage);
+        }
+    };
+	priorItem = null;
+};
+setInterval(replaceItem, 1000);
+
+theItem имеет замыкание и большую строку, writeToLog - замыкание с ссылкой на priorItem, который ссылается на старые theItem. Получаются зависимые замыкания.
+Данный пример рассматривается в очень большом количестве литературы по js.
+Я считаю, что самый логичный способ - добавить 15 строку - обнулить переменную, следовательно сборщик мусора отработает.
