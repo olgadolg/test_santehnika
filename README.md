@@ -1,3 +1,3 @@
 first.js - 1 задача  
-second.html - 2 задача (к ней папка /js/)  
+second.html, js/script.js - 2 задача  
 third.txt - 3 задача
